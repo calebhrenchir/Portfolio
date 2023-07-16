@@ -33,7 +33,7 @@ export default function Links() {
                 <h3 className="text-md font-medium pb-4">Projects</h3>
                 <ul className="text-md opacity-60 flex flex-col gap-1">
                     {projects.map((project) => (
-                        <Link href={project.href} target="_blank">
+                        <Link key={project.label} href={project.href} target="_blank">
                             {project.label}
                         </Link>
                     ))}
@@ -44,7 +44,7 @@ export default function Links() {
                 <h3 className="text-md font-medium pb-4">Links</h3>
                 <ul className="text-md opacity-60 flex flex-col gap-1">
                     {links.map((link) => (
-                        <Link href={link.href} target="_blank">
+                        <Link key={link.label} href={link.href} target="_blank">
                             {link.label}
                         </Link>
                     ))}

@@ -36,7 +36,7 @@ export default function WorkHistory() {
 
             <div className="flex overflow-x-scroll no-scrollbar gap-6 px-8">
                 {jobs.map((job) => (
-                    <WorkHistoryCard logo={job.logo} company={job.company} title={job.title} startDate={job.startDate} endDate={job.endDate} />
+                    <WorkHistoryCard key={job.company} logo={job.logo} company={job.company} title={job.title} startDate={job.startDate} endDate={job.endDate} />
                 ))}
             </div>
         </li>
